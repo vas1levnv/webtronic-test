@@ -1,24 +1,23 @@
-
 const routes = [
   {
-    path: '/',
+    path: '/index',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
+      {path: '', component: () => import('pages/IndexPage.vue')}
     ]
   },
   {
-    path: '/home',
+    path: '/',
     component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/HomePage.vue') }
+      {path: '', component: () => import('pages/HomePage.vue')}
     ]
   },
   {
     path: '/login',
     component: () => import('layouts/LoginLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/LoginPage.vue') }
+      {path: '', component: () => import('pages/LoginPage.vue')}
     ]
   },
 
